@@ -1,0 +1,65 @@
+Random Forest Classifier(one of the best),Bayesian classifier,knn,vector support machine 
+user_based detection and content based dection
+parameters:
+node degree,frequency of message.
+
+user based detection:
+1)Reputation score:the ratio between
+the number of followers over the total sum of the number of
+followers and the number of people a user is following.
+
+The content-based features they
+use include (a) content similarity,Replies/Mentions  and wordweight(not able to understand)(b) number of tweets that
+contain HTTP links in the most recent 20 tweets, (c) the
+number of tweets that contain the “@” symbols in a user’s
+20 most recent tweets, (d) the number of tweets that contain
+the “#” hashtag symbol.
+-----------------
+According to 2nd paper 
+content based features are :
+1:duplicate tweets:spammers often include different
+@usernames in their duplicate tweets to avoid be-
+ing detected. This is also an efficient way to spam
+legitimate users, since Twitter automatically collects
+all tweets containing your @username for you.
+clean the data by stopping the words con-
+taining “@”, “#”, “http://”, and “www.” in the tweets.
+In other words, the username information, topic infor-
+mation, and links are ignored. Instead only the con-
+tent of the tweets is considered.pairwise Levenshtein
+distance is calculated in the user’s 20 most recent
+tweets. If the distance is smaller than a certain thresh-
+old, it is counted as one duplicate.
+
+2:http or www links:witter does not check these shorten
+URLs for malware, it is considered as spam if your
+updates consist mainly of links, and not personal up-
+dates according to Twitter’s policy.
+3:replies & mentions:sending unsolicited
+replies and mentions.
+4:# hashtag:post multiple unrelated updates to
+a topic using the # symbol”. The number of tweets
+which contains the hashtag # in a user’s 20 most re-
+cent tweets is measured as a content-based feature.
+
+Analysis:
+An account cannot be predicted as spam
+with certainty even though some of its features are
+identical to the training examples. Bayesian classi-fier treats the non-deterministic relationship between
+class variables and features as random variables and
+captures their relationship using posterior probability.
+While other methods cannot tolerate this kind of noisy
+data or confounding factors, such as decision tree
+Pairwise duplication?
+--------------
+Random Forest Classifier approach to classify spammer or legitimate (one of best algo) will not be used by us bcz code is not available.
+-----------------
+Network Based spam filtering(Just read it)
+This won't be used by us for the project.
+
+
+ 
+
+
+
+

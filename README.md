@@ -1,4 +1,4 @@
-# Classifier-Approach-Towards-Twitter-Spam-Detection
+# Classifier-Approach-Towards-Twitter-Spam-Detection #
 For Twitter Spam Detection We used machine learning approach and classifiers like Naive Bayes, Random Forest, Support Vector Machine(SVM) . Classification is based on Content Based features like Hashtages,Replies and Mentions etc And User Based feature like Reputation Score.
 
 
